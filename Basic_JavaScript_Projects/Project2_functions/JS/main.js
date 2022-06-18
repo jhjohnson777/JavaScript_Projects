@@ -7,3 +7,9 @@ function myFunction() {
     sentence += " a lot from this book!"; // += to concatenate, just + does not work
     document.getElementById("Concatenate").innerHTML = sentence;
 }
+
+function myTimes(p1, p2) {
+    return p1 * p2;
+    
+}
+document.getElementById("answer").innerHTML = myTimes(8, 5)
