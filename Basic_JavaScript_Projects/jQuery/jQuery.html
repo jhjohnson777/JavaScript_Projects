@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<script>
+    $(document).ready(function() { //once the page is loaded execute this function
+        $("html").append( //inside html append, or add, this content. backslash is a line break
+            "<body>\
+                <div id='container'>\
+                    <div id='inner'>\
+                        <h1>Basic jQuery</h1>\
+                        <p id='1'>Paragraph 1</p>\
+                        <p id='2'>Paragraph 2</p>\
+                        <p id='3'>Paragraph 3</p>\
+                    </div>\
+                </div>\
+            </body>"
+        );
+        $("#2").css({"color":"red"}); // adds css style inside document
+        $("#3").click(function() {  // click on id=3 to execute function that
+            $('h1').hide();  //hides the h1 eleement
+        })
+        $("#1").on("click", function() { // upon clicking on id=1 execute function
+            $('#2').hide("slow"); //slowly hide id=2
+        });
+    });
+</script>
+</html>
