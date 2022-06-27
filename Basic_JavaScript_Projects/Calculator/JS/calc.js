@@ -62,8 +62,8 @@ function Handle_Operator(Next_Operator) {
         result = Number(result).toFixed (9);
         //This will remove any trailing 0's
         result = (result *1).toString();
-        Calculator.Display_Value = result;
-        Calculator.First_Operand = result;
+        Calculator.Display_Value = parseFloat(result);
+        Calculator.First_Operand = parseFloat(result);
     }
     Calculator.Wait_Second_Operand = true;
     Calculator.operator = Next_Operator;
